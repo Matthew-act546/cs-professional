@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple, professional Computer Science portfolio demo deployed with Netlify." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>CS Portfolio | Netlify Deployment Demo</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="CS Portfolio home"><span class="brand-mark">&lt;/&gt;</span> CS<span class="brand-accent">Portfolio</span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="main-nav">☰</button>
+      <nav id="main-nav" class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="status-dot"></span> COMPUTER SCIENCE • PORTFOLIO DEMO</span>
+          <h1>Building ideas<br />into <span>digital reality.</span></h1>
+          <p>Hi, I'm <strong>Alex Developer</strong> — a Computer Science student passionate about web development, software engineering, and turning problems into practical solutions.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore Projects <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-secondary" href="#about">Learn More</a>
+          </div>
+          <div class="hero-metrics"><div><strong>03</strong><span>Sample Projects</span></div><div><strong>05</strong><span>Core Skills</span></div><div><strong>100%</strong><span>Static Website</span></div></div>
+        </div>
+        <div class="code-panel" aria-label="Decorative code example">
+          <div class="panel-top"><div class="window-dots"><i></i><i></i><i></i></div><span>developer.js</span><span class="panel-symbol">⌘</span></div>
+          <div class="code-lines"><div><span class="line-num">01</span><span class="purple">const</span> developer = {</div><div><span class="line-num">02</span> &nbsp; name: <span class="lime">"Alex Developer"</span>,</div><div><span class="line-num">03</span> &nbsp; role: <span class="lime">"CS Student"</span>,</div><div><span class="line-num">04</span> &nbsp; skills: [</div><div><span class="line-num">05</span> &nbsp;&nbsp; <span class="lime">"HTML"</span>, <span class="lime">"CSS"</span>, <span class="lime">"JavaScript"</span></div><div><span class="line-num">06</span> &nbsp; ],</div><div><span class="line-num">07</span> &nbsp; passion: <span class="lime">"Building the web"</span></div><div><span class="line-num">08</span> };</div><div><span class="line-num">09</span>&nbsp;</div><div><span class="line-num">10</span><span class="purple">console</span>.log(<span class="lime">"Hello, world!"</span>);</div></div>
+          <div class="panel-footer"><span class="terminal-dot"></span> All systems operational <span>● JavaScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about"><div class="container split-section"><div><span class="section-kicker">01 / ABOUT ME</span><h2>Curious mind.<br />Practical solutions.</h2></div><div class="about-text"><p>I enjoy understanding how technology works — from crafting responsive interfaces to exploring the logic behind modern applications.</p><p>This sample portfolio is built entirely with <strong>HTML, CSS, and vanilla JavaScript</strong>. It's designed to demonstrate how simple it can be to publish a professional website using Netlify.</p><div class="feature-tags"><span>Clean UI</span><span>Responsive Design</span><span>Fast Deployment</span></div></div></div></section>
+
+    <section class="section skills-section" id="skills"><div class="container"><div class="section-heading"><div><span class="section-kicker">02 / TECH STACK</span><h2>Tools of the trade.</h2></div><p>Technologies used for web development and problem solving.</p></div><div class="skills-grid"><article class="skill-card"><span class="skill-icon">⌘</span><h3>HTML5</h3><p>Semantic structure</p></article><article class="skill-card"><span class="skill-icon">◈</span><h3>CSS3</h3><p>Responsive styling</p></article><article class="skill-card"><span class="skill-icon">{ }</span><h3>JavaScript</h3><p>Web interactivity</p></article><article class="skill-card"><span class="skill-icon">⑂</span><h3>Git</h3><p>Version control</p></article><article class="skill-card"><span class="skill-icon">☁</span><h3>Cloud</h3><p>Web deployment</p></article></div></div></section>
+
+    <section class="section projects-section" id="projects"><div class="container"><div class="section-heading"><div><span class="section-kicker">03 / SELECTED WORK</span><h2>Featured projects.</h2></div><p>Demo concepts representing common software projects.</p></div><div class="filter-bar" role="group" aria-label="Filter projects"><button class="filter-btn active" data-filter="all" aria-pressed="true">All Projects</button><button class="filter-btn" data-filter="web" aria-pressed="false">Web Apps</button><button class="filter-btn" data-filter="tools" aria-pressed="false">Tools</button></div><div class="projects-grid"><article class="project-card" data-category="web"><div class="project-art art-one"><span>&lt;/&gt;</span></div><div class="project-body"><div class="project-meta">WEB APPLICATION <span>01</span></div><h3>Student Portal</h3><p>A concept dashboard for managing student profiles, coursework, and announcements.</p><div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div></article><article class="project-card" data-category="web"><div class="project-art art-two"><span>◫</span></div><div class="project-body"><div class="project-meta">WEB APPLICATION <span>02</span></div><h3>Task Manager</h3><p>A simple productivity app concept for organizing everyday tasks and priorities.</p><div class="project-tags"><span>UI Design</span><span>Frontend</span></div></div></article><article class="project-card" data-category="tools"><div class="project-art art-three"><span>$_</span></div><div class="project-body"><div class="project-meta">DEVELOPER TOOL <span>03</span></div><h3>CLI Utility</h3><p>A command-line tool concept for automating small, repetitive development tasks.</p><div class="project-tags"><span>Programming</span><span>Automation</span></div></div></article></div></div></section>
+
+    <section class="section contact-section" id="contact"><div class="container contact-box"><span class="section-kicker">04 / LET'S CONNECT</span><h2>Have an idea?<br /><span>Let's build something.</span></h2><p>Interested in collaborating or discussing technology? Reach out and say hello.</p><a class="btn btn-primary" href="mailto:hello@example.com?subject=Hello%20from%20your%20portfolio">Send an Email <span aria-hidden="true">↗</span></a><p class="contact-note">Demo email address — replace with your own before sharing.</p></div></section>
+  </main>
+  <footer class="site-footer"><div class="container footer-wrap"><a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> CS<span class="brand-accent">Portfolio</span></a><span>© <span id="year">2026</span> CS Portfolio. Built with HTML, CSS & JavaScript.</span><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
